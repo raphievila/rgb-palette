@@ -49,10 +49,6 @@ const getRGB = (me) => {
   return rgbSplit;
 }
 
-const setSampleValues = () => {
-  
-}
-
 const applyColor = () => {
   var sample = $('.select');
   
@@ -92,7 +88,7 @@ const setLabels = () => {
       compSet = getRGB($('#color4')),
       comp2Set = getRGB($('#color5'));
 
-  console.log(typeof mainSet, mainSet);
+  // console.log(typeof mainSet, mainSet);
 
   mainValue.val(mainSet).css('color', rgb(mainSet));
   altValue.val(altSet).css('color', rgb(altSet));
