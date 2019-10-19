@@ -73,4 +73,10 @@ If you would like to contribute you can initialize the web server by using the `
 ```s
 npm run dev
 ```
-`nodemon` is a very effective tool when developing with Node.js, because allows you to make changes to the code and the server is refreshed or restarted automatically after every specified file types has been saved.
+`nodemon` is a very effective tool when developing with Node.js, because allows you to make changes to the code and the server is refreshed or restarted automatically after every specific file types have been saved.
+
+I will be reviewing pull requests from time to time. Please be very specific when describing what you are trying to accomplish and what other ideas you might want to add.
+
+---
+
+Hope you enjoy it. Happy Coding, Happy Developing
