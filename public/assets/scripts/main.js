@@ -7,15 +7,27 @@ const redSlider = $('#myRed'),
       mainSample = $('#color1'),
       secondarySample = $('#color2'),
       mixSample = $('#color3'),
+      mainValue = $('#mainValue'),
+      altValue = $('#altValue'),
+      mixValue = $('#mixValue'),
+      compValue = $('#compValue'),
+      comp2Value = $('#comp2Value'),
       complementSample = $('#color4'),
       complement2Sample = $('#color5');
 
 var currentRGB = [204,204,204];
 
 const rgb = (r, g, b) => {
+  if (typeof r === 'object') {
+    b = r[2];
+    g = r[1];
+    r = r[0];
+  }
+
   if (r === undefined || isNaN(r)) { r = 0; }
   if (g === undefined || isNaN(g)) { g = 0; }
   if (b === undefined || isNaN(b)) { b = 0; }
+
   return 'rgb(' + r + ',' + g + ',' + b + ')';
 }
 
@@ -54,6 +66,7 @@ const applyColor = () => {
   mixSamples();
   setComplement(mainSample);
   setComplement(secondarySample);
+  setLabels();
 }
 
 const setSliders = (rgbObject) => {
@@ -70,6 +83,22 @@ const setSliders = (rgbObject) => {
   blueSlider.val(rgbObject[2]);
   blueSample.css('background', rgb(0,0,rgbObject[2]))
     .text(rgbObject[2]);
+}
+
+const setLabels = () => {
+  var mainSet = getRGB(mainSample),
+      altSet = getRGB(secondarySample),
+      mixSet = getRGB(mixSample),
+      compSet = getRGB($('#color4')),
+      comp2Set = getRGB($('#color5'));
+
+  console.log(typeof mainSet, mainSet);
+
+  mainValue.val(mainSet).css('color', rgb(mainSet));
+  altValue.val(altSet).css('color', rgb(altSet));
+  mixValue.val(mixSet).css('color', rgb(mixSet));
+  compValue.val(compSet).css('color', rgb(compSet));
+  comp2Value.val(comp2Set).css('color', rgb(comp2Set));
 }
 
 const setComplement = (me) => {
@@ -124,6 +153,7 @@ const selectSample = (t) => {
   
   setSliders(currentRGB);
   mixSamples();
+  setLabels();
   setComplement(mainSample);
   setComplement(secondarySample);
 }

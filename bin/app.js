@@ -1,6 +1,6 @@
 const path = require('path')
 const express = require('express')
-const hsb = require('hsb')
+const hsb = require('hbs')
 
 const app = new express()
 const port = process.env.PORT || 3000
@@ -19,11 +19,13 @@ hsb.registerPartials(partialPath)
 app.use(express.static(publicDirectoryPath))
 
 
-app.get('/', (req, res) => {
-    res.render('index', {
+app.get('', (req, res) => {
+    res.render('home', {
         title: 'Basic RGB Palette Generator',
         name: 'Rafael Vila'
     })
 })
 
-app.listen(3000);
+app.listen(port, () => {
+    console.log('Server is up in port ' + port)
+})
