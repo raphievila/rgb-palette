@@ -1,0 +1,80 @@
+#title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.flex-items, #sampleContainer,
+#sampleValueContainer {
+  margin: auto;
+  display: flex;
+  align-content: flex-start;
+  justify-content: space-around;
+}
+
+#sampleContainer,
+#sampleValueContainer {
+  width: 500px;
+  height: 100px;
+  padding: 10px 0;
+  border: 5px solid #cccccc;
+  border-width: 5px 0;
+}
+
+#sampleValueContainer {
+  height: 50px;
+  border-width: 0px 0px 5px;
+}
+
+#rgbSamples {
+  width: 320px;
+  height: 56px;
+}
+
+#picker,
+#sliders {
+  text-align: center;
+  padding: 20px;
+}
+
+.sample {
+  flex: 1 12.5%;
+  margin: 5px;
+  line-height: 45px;
+  font-size: 24px;
+  color: white;
+}
+#sampleValueContainer .sample {
+  display: flex;
+  margin: 0 5px;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+  line-height: 1em;
+}
+.sample-label {
+  flex: 1 100%;
+  width: 100%;
+  color: black;
+  font-size: 10px;
+  text-align: center;
+}
+#rgbSamples .sample {
+  max-width: 100px;
+  background: gray;
+}
+
+div[id^=color] {
+  background: gray;
+}
+
+.slider {
+  width: 100px;
+}
+
+.select {
+  border: 2px solid cyan;
+}
+
+/*# sourceMappingURL=main.css.map */

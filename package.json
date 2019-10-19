@@ -1,0 +1,36 @@
+{
+  "name": "rgb-palette",
+  "version": "1.0.0",
+  "description": "Basic JavaScript based web RGB color palette generator",
+  "main": "/bin/app.js",
+  "scripts": {
+    "start": "node bin/app.js",
+    "dev": "nodemon src/index.js -e js,hbs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raphievila/rgb-palette.git"
+  },
+  "keywords": [
+    "web",
+    "dev",
+    "tools",
+    "node",
+    "test"
+  ],
+  "author": "Rafael Vila <rvila@revolutionvisualarts.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/raphievila/rgb-palette/issues"
+  },
+  "homepage": "https://github.com/raphievila/rgb-palette#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hsb": "^1.0.2",
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}

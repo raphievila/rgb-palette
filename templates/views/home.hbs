@@ -1,0 +1,44 @@
+{{header}}
+    <div id="title">RGB Based Color Palette</div>
+    <div id="sampleContainer" class="flex-items">
+        <div id="color1" class="sample select" title="Main"></div>
+        <div id="color2" class="sample" title="Secondary"></div>
+        <div id="color3" class="sample" title="Mix"></div>
+        <div id="color4" class="sample" title="Complement"></div>
+        <div id="color5" class="sample" title="Complement 2"></div>
+    </div>
+    <div id="sampleValueContainer" class="flex-items">
+        <div class="sample">
+            <label for="mainValue" class="sample-label">Main</label>
+            <input id="mainValue" class="sample-label" readonly />
+        </div>
+        <div class="sample">
+            <label for="altValue" class="sample-label">Secondary</label>
+            <input id="altValue" class="sample-label" readonly />
+        </div>
+        <div class="sample">
+            <label for="mixValue" class="sample-label">Mix</label>
+            <input id="mixValue" class="sample-label" readonly />
+        </div>
+        <div class="sample">
+            <label for="compValue" class="sample-label">Complement 1</label>
+            <input id="compValue" class="sample-label" readonly />
+        </div>
+        <div class="sample">
+            <label for="comp2Value" class="sample-label">Complement 2</label>
+            <input id="comp2Value" class="sample-label" readonly />
+        </div>
+    </div>
+    <div id="sliders">
+        <div id="rgbSamples" class="flex-items">
+            <div id="sampleRed" class="sample">128</div>
+            <div id="sampleGreen" class="sample">128</div>
+            <div id="sampleBlue" class="sample">128</div>
+        </div>
+        <div id="rgbs" class="slidecontainer">
+            <input type="range" min="0" max="255" value="128" class="slider" id="myRed">
+            <input type="range" min="0" max="255" value="128" class="slider" id="myGreen">
+            <input type="range" min="0" max="255" value="128" class="slider" id="myBlue">
+        </div>
+    </div>
+{{footer}}
