@@ -60,7 +60,24 @@ $ cd /location/of/repository/rgb-palette/
 $ /location/of/repository/rgb-palette/> npm install
 ```
 
-Press enter, all required dependencies will be installed. If installation is successful run the following statement.
+Once this is done, you need to create a folder on the root directory called `config`
+
+```console
+$ /location/of/repository/rgb-palette/> mkdir config
+```
+
+___
+**IMPORTANT NOTE**
+Then inside that directory, create a file called `.env` and `.test-env`. For the moment the app is not using this values, but `JWT_SECRET` global is required for a `middleware`.Once you create those files, you need to add the salt you want to use to authorized transactions on the app like this:
+
+```ini
+#3000 for .test-env and port designated for your application in Heroku or wherever you are hosting your app
+PORT=3000 
+JWT_SECRET=[the_secret_string_to_salt]
+```
+___
+
+When all required dependencies are installed and the `config` directory with its content is created test the installation. If installation is successful you will be able to run the following statement:
 
 ```console
 $ /location/of/repository/rgb-palette/> npm run start
@@ -68,7 +85,7 @@ $ /location/of/repository/rgb-palette/> npm run start
 
 If successful you should see
 
-```shell
+```console
 > rgb-palette@1.0.0 start /location/of/repository/rgb-palette/
 > node bin/app.js
 

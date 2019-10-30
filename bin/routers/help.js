@@ -41,9 +41,9 @@ const helpList = () => {
 
     for (var i = 0; i < items.list.length; i++) {
         filename = items.list[i]
-        friendly = filename.replace(/(\w)([A-Z])/, `$1 $2`).trim()
+        friendly = filename.replace('README', 'ReadMe').replace(/(\w)([A-Z])/, `$1 $2`).trim()
         listitem = template
-            .replace('[filename]', filename)
+            .replace('[filename]', filename + '/')
             .replace('[label]', friendly)
         nav.push(listitem)
     }
@@ -52,7 +52,7 @@ const helpList = () => {
 }
 
 router.get('/help/test', (req, res) => {
-    console.log(helpList())
+    // console.log(helpList())
 
     res.status(200).send()
 })
@@ -64,7 +64,7 @@ router.get('/help/:page', (req, res) => {
 
     var html = fs.readFileSync(__dirname + '/../../' + page + '.md', 'utf8', (err, data) => {
         if (err) throw err
-        console.log(typeof data)
+        // console.log(typeof data)
         return data;
     })
 
