@@ -1,0 +1,33 @@
+namespace \RGB-Palette;
+
+class BaseColor {
+    const MainColor     = "rgb([main])";
+    const AltColor      = "rgb([secondary])";
+    const MixColor      = "rgb([mix])";
+    const ComplementOne = "rgb([comp1])";
+    const ComplementTwo = "rgb([comp2])";
+
+    public static function colorList () {
+        $objectList = [
+            "main-color"     => self::MainColor,
+            "alt-color"      => self::AltColor,
+            "mix-color"      => self::MixColor,
+            "complement-one" => self::ComplementOne,
+            "complement-two" => self::ComplementTwo
+        ];
+
+        return $objectList;
+    }
+
+    public static function colorValues () {
+        $objectList = [
+            "main-color"     => explode(',', '[main]'),
+            "alt-color"      => explode(',', '[secondary]'),
+            "mix-color"      => explode(',', '[mix]'),
+            "complement-one" => explode(',', '[comp1]'),
+            "complement-two" => explode(',', '[comp2]')
+        ];
+
+        return $objectList;
+    }
+}

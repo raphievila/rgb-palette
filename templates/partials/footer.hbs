@@ -1,8 +1,9 @@
     </main>
-    {{>scripts}}
     <footer>
-        <p class="credits">Designed and developed by {{author}} for <a href="https://revolutionvisualarts.com">Revolution Visual Arts</a>.</p>
+        <p class="credits">Designed and developed by{{#if author}} {{author}} for{{/if}} <a href="https://revolutionvisualarts.com">Revolution Visual Arts</a>.<span id="testView"></span></p>
+        <p class="credits">Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
     </footer>
+    {{>scripts}}
 </body>
 
 </html>

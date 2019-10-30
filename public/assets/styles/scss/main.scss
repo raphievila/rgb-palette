@@ -1,3 +1,10 @@
+@import 'inc/inc';
+@import 'inc/flaticon';
+
+* {
+    box-sizing: border-box;
+}
+
 html {
     height: 100vh;
     width: 100vw;
@@ -5,13 +12,14 @@ html {
 }
 
 body {
+    margin: 0;
     display: flex;
     width: 100%;
     height: 100%;
     flex-direction: column;
     align-content: stretch;
     font-family: 'Nanum Gothic', 'open sans', 'droid sans', 'ubuntu sans', arial, sans-serif;
-    background: #222;
+    background: rgb(34,34,34);
     color: #ececec;
 }
 
@@ -24,6 +32,64 @@ footer {
     flex-basis: 25%;
     width: 100%;
     max-height: 80px;
+    border-top: 2px solid rgb(50, 50, 50);
+}
+
+#sidemenu {
+    color: gray;
+    background: $terminalbg;
+
+    & ul,ol {
+        @extend %blocklist;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: flex-start;
+        height: 100%;
+
+        li {
+            padding: 10px;
+            margin: 0;
+
+            &.pd {
+                flex: 1 auto;
+                display: flex;
+                align-items: flex-end;
+            }
+        }
+    }
+
+    a {
+        display: flex;
+        align-content: flex-start;
+        justify-content: center;
+        color: inherit;
+        white-space: nowrap;
+        text: {
+            decoration: none;
+        }
+
+        &:hover {
+            color: gold;
+        }
+
+        & [class^="flaticon"] {
+            margin: 0;
+        }
+
+        & .menu-label {
+            transition: width 0.3s ease-in-out;
+            width: 0px;
+            margin-left: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            vertical-align: middle;
+
+            &.expanded {
+                width: 80px;
+            }
+        }
+    }
 }
 
 .credits {
@@ -76,14 +142,14 @@ footer {
 #sampleValueContainer {
     @extend .flex-items;
     width: 500px;
-    height: 100px;
+    height: 130px;
     padding: 10px 0;
     border: 5px solid rgb(68, 68, 68);
     border-width: 5px 0;
 }
 
 #sampleValueContainer {
-    height: 50px;
+    height: auto;
     border-width: 0px 0px 5px;
 }
 
@@ -101,6 +167,7 @@ footer {
 .sample {
     flex: 1 12.5%;
     margin: 5px;
+    border: 2px solid transparent;
     line-height: 45px;
     font: {
         size: 24px;
@@ -148,4 +215,183 @@ div[id^="color"] {
 
 .select {
     border: 2px solid cyan;
+}
+
+#basic-tools {
+    @extend .flex-items;
+    flex-direction: row;
+    align-content: stretch;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#rgb {
+    &-color-selector {
+        flex: 1 100%;
+    }
+}
+
+$knobSize: 10px;
+
+#bg {
+    &-gamma {
+        &-container {
+            @extend .flex-items;
+            position: relative;
+            flex-direction: column;
+            align-content: stretch;
+            align-items: center;
+            flex: 1 80px;
+            max-width: 80px;
+            height: 100%;
+        }
+
+        &-slider {
+            flex-grow: 1;
+            position: relative;
+            display: block;
+            width: 3px;
+            background-color: rgb(103,103,103);
+            margin: 5px 0;
+        }
+
+        &-sample {
+            &-top, &-bottom {
+                flex: 1 $knobSize;
+                width: $knobSize;
+                height: $knobSize;
+                max-height: $knobSize;
+                margin: 5px 0;
+            }
+
+            &-top {
+                background-color: black;
+            }
+            
+            &-bottom {
+                background-color: white;
+            }
+        }
+
+        &-knob {
+            position: relative;
+            content: '';
+            transform: translateX(-50%);
+            top: 13%;
+            left: 50%;
+            width: $knobSize;
+            height: $knobSize;
+            border-radius: 100%;
+            background-color: rgb(128, 128, 128);
+            box-shadow: 0 3px 8px black;
+
+            & > .flag {
+                position: absolute;
+                transform: translate(-110%,-50%);
+                transition: opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+                display: block;
+                opacity: 0;
+                box-shadow: 0 0 0 rgb(241, 235, 196), 0 0 0 rgb(255, 255, 255);
+                top: 50%;
+                left: 0;
+                content: '13%';
+                color: #333;
+                background-color: white;
+                font: {
+                    size: 18;
+                    weight: 800;
+                }
+                padding: 10px;
+                border-radius: 9px;
+            }
+
+            &.ui-draggable-dragging {
+                box-shadow: 0 0 30px rgb(241, 235, 196), 0 0 10px rgb(255, 255, 255);
+                & > .flag {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.exporters {
+    margin: 10px auto;
+    max-width: 500px;
+
+    &-tab {
+        text-align: center;
+    }
+
+    &-receiver {
+        width: 100%;
+        color: rgb(14, 168, 148);
+        border-radius: 10px 10px 0 0;
+        background-color: $terminalbg;
+        height: 140px;
+        min-height: 80px;
+        margin: 0;
+        resize: none;
+        padding: 10px;
+        font-family: consolas, 'Courier New', Courier, monospace;
+        font-size: 12px;
+
+        &#plain-text {
+            display: block;
+        }
+
+        &#console {
+            display: none;
+            overflow-y: auto;
+        }
+
+        &-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            margin-bottom: 80px;
+        }
+    }
+
+    &-template {
+        &-name {
+            position: absolute;
+            padding: 0 20px;
+            height: 40px;
+            top: auto;
+            bottom: -40px;
+            width: 100%;
+            text-align: right;
+            line-height: 40px;
+            background: black;
+            border: 1px gray solid;
+            border-top: 0;
+            border-radius: 0 0 10px 10px;
+            color: rgb(10, 117, 103);
+        }
+    }
+}
+
+.tabs {
+    @extend %inlinelist;
+    margin: 0 20px;
+
+    & > li {
+        padding: 0;
+        margin: 0;
+        a {
+            display: block;
+            padding: 5px 10px;
+            margin: 0 2px;
+            width: 100%;
+            height: 100%;
+            color: inherit;
+            cursor: pointer;
+            &:hover, &.active {
+                color: gold;
+                background-color: $terminalbg;
+            }
+        }
+    }
 }

@@ -1,46 +1,79 @@
 {{>header}}
-<div class="center-box">
-    <div id="title">RGB Based Color Palette</div>
-    <div id="sampleContainer" class="flex-items">
-        <div id="color1" class="sample select" title="Main"></div>
-        <div id="color2" class="sample" title="Secondary"></div>
-        <div id="color3" class="sample" title="Mix"></div>
-        <div id="color4" class="sample" title="Complement"></div>
-        <div id="color5" class="sample" title="Complement 2"></div>
+<div id="basic-tools">
+    <div id="sidemenu">
+        <ul>
+            <li><a href="#"><span class="flaticon-menu"></span><span class="menu-label">Menu</span></a></li>
+            <li><a href="#" onclick="downloadAction()"><span class="flaticon-save"></span><span class="menu-label">Save</span></a></li>
+            <!--li><a href="/export/download"><span class="flaticon-download"></span><span class="menu-label">Download</span></a></li-->
+            <li class="pd"><a href="/settings"><span class="flaticon-adjust"></span><span class="menu-label">Settings</span></a></li>
+            <li><a href="/help"><span class="flaticon-help"></span><span class="menu-label">Help</span></a></li>
+        </ul>
     </div>
-    <div id="sampleValueContainer" class="flex-items">
-        <div class="sample">
-            <label for="mainValue" class="sample-label">Main</label>
-            <input id="mainValue" class="sample-label" readonly />
-        </div>
-        <div class="sample">
-            <label for="altValue" class="sample-label">Secondary</label>
-            <input id="altValue" class="sample-label" readonly />
-        </div>
-        <div class="sample">
-            <label for="mixValue" class="sample-label">Mix</label>
-            <input id="mixValue" class="sample-label" readonly />
-        </div>
-        <div class="sample">
-            <label for="compValue" class="sample-label">Complement 1</label>
-            <input id="compValue" class="sample-label" readonly />
-        </div>
-        <div class="sample">
-            <label for="comp2Value" class="sample-label">Complement 2</label>
-            <input id="comp2Value" class="sample-label" readonly />
-        </div>
+    <div id="rgb-color-selector">
+            <div id="title">RGB Based Color Palette</div>
+            <div id="sampleContainer" class="flex-items">
+                <div id="color1" class="sample select" title="Main"></div>
+                <div id="color2" class="sample" title="Secondary"></div>
+                <div id="color3" class="sample" title="Mix"></div>
+                <div id="color4" class="sample" title="Complement"></div>
+                <div id="color5" class="sample" title="Complement 2"></div>
+            </div>
+            <div id="sampleValueContainer" class="flex-items">
+                <div class="sample">
+                    <label for="mainValue" class="sample-label">Main</label>
+                    <input id="mainValue" class="sample-label" value="128,128,128" readonly />
+                </div>
+                <div class="sample">
+                    <label for="altValue" class="sample-label">Secondary</label>
+                    <input id="altValue" class="sample-label" value="128,128,128" readonly />
+                </div>
+                <div class="sample">
+                    <label for="mixValue" class="sample-label">Mix</label>
+                    <input id="mixValue" class="sample-label" value="128,128,128" readonly />
+                </div>
+                <div class="sample">
+                    <label for="compValue" class="sample-label">Complement 1</label>
+                    <input id="compValue" class="sample-label" value="128,128,128" readonly />
+                </div>
+                <div class="sample">
+                    <label for="comp2Value" class="sample-label">Complement 2</label>
+                    <input id="comp2Value" class="sample-label" value="128,128,128" readonly />
+                </div>
+            </div>
+            <div id="sliders">
+                <div id="rgbSamples" class="flex-items">
+                    <div id="sampleRed" class="sample">128</div>
+                    <div id="sampleGreen" class="sample">128</div>
+                    <div id="sampleBlue" class="sample">128</div>
+                </div>
+                <div id="rgbs" class="slidecontainer">
+                    <input type="range" min="0" max="255" value="128" class="slider" id="myRed">
+                    <input type="range" min="0" max="255" value="128" class="slider" id="myGreen">
+                    <input type="range" min="0" max="255" value="128" class="slider" id="myBlue">
+                </div>
+            </div>
+            <div class="exporters">
+                <div class="exporters-tab">
+                    <ul class="tabs">
+                        <li class="tab" data-get="scss-template"><a>SCSS</a></li>
+                        <li class="tab" data-get="json-template"><a>JSON</a></li>
+                        <li class="tab" data-get="c-template"><a>C Style</a></li>
+                    </ul>
+                </div>
+                <div class="exporters-receiver-container">
+                    <textarea id="plain-text" class="exporters-receiver" readonly></textarea>
+                    <div id="console" class="exporters-receiver"></div>
+                    <div id="filename" class="exporters-template-name"></div>
+                </div>
+                
+            </div>
     </div>
-    <div id="sliders">
-        <div id="rgbSamples" class="flex-items">
-            <div id="sampleRed" class="sample">128</div>
-            <div id="sampleGreen" class="sample">128</div>
-            <div id="sampleBlue" class="sample">128</div>
+    <div id="bg-gamma-container">
+        <div id="bg-gamma-sample-top"></div>
+        <div id="bg-gamma-slider">
+            <div id="bg-gamma-knob"><div class="flag">13%</div></div>
         </div>
-        <div id="rgbs" class="slidecontainer">
-            <input type="range" min="0" max="255" value="128" class="slider" id="myRed">
-            <input type="range" min="0" max="255" value="128" class="slider" id="myGreen">
-            <input type="range" min="0" max="255" value="128" class="slider" id="myBlue">
-        </div>
+        <div id="bg-gamma-sample-bottom"></div>
     </div>
 </div>
 {{>footer}}

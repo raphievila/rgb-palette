@@ -1,0 +1,56 @@
+/* COLOR SET */
+$main-color: rgb([main]);
+$alt-color: rgb([secondary]);
+$mix-color: rgb([mix]);
+$complement-one: rgb([comp1]);
+$complement-two: rgb([comp2]);
+
+.mc {
+    background-color: $main-color;
+    &-text {
+        color: $main-color;
+    }
+    &-border {
+        border-color: $main-color;
+    }
+}
+
+.ac {
+    background-color: $alt-color;
+    &-text {
+        color: $alt-color;
+    }
+    &-border {
+        border-color: $alt-color;
+    }
+}
+
+.mxc {
+    background-color: $mix-color;
+    &-text {
+        color: $mix-color;
+    }
+    &-border {
+        border-color: $mix-color;
+    }
+}
+
+.c1c {
+    background-color: $complement-one;
+    &-text {
+        color: $complement-one;
+    }
+    &-border {
+        border-color: $complement-one;
+    }
+}
+
+.c2c {
+    background-color: $complement-two;
+    &-text {
+        color: $complement-two;
+    }
+    &-border {
+        border-color: $complement-two;
+    }
+}

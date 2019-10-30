@@ -1,0 +1,10 @@
+{{>header}}
+<header id="top-nav">{{>nav}}</header>
+<div class="markdown scrollable-content">
+    {{#if sidebar}}
+    <div id="sidebar">{{{sidebar}}}</div>
+    {{/if}}
+    <div class="markdown-content">{{{body}}}</div>
+</div>
+<div id="bottom-nav">{{>nav}}</div>
+{{>footer}}

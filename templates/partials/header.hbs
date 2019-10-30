@@ -6,8 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{title}}</title>
+    {{#if name}}
+    <meta role="content-creator" content="{{name}}" />
+    {{/if}}
+    {{#if author}}
     <meta role="author" content="{{author}}" />
-    <link rel="stylesheet" type="text/css" href="/assets/styles/css/main.css" />
+    {{/if}}
+    <link href="/assets/styles/css/main.css" rel="stylesheet" type="text/css" />
+    {{#if md}}
+    <link href="/assets/styles/css/pages.css" rel="stylesheet" type="text/css" />
+    {{/if}}
     <link href="https://fonts.googleapis.com/css?family=Bitter:700|Nanum+Gothic:400,700,800&display=swap" rel="stylesheet">
 </head>
 

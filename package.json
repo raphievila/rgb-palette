@@ -5,7 +5,7 @@
   "main": "bin/app.js",
   "scripts": {
     "start": "node bin/app.js",
-    "dev": "nodemon bin/app.js -e js,hbs,css",
+    "dev": "env-cmd -f ./config/.env nodemon bin/app.js -e js,hbs,css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,13 +26,17 @@
   },
   "homepage": "https://github.com/raphievila/rgb-palette#readme",
   "dependencies": {
+    "ajax-request": "^1.2.3",
     "express": "^4.17.1",
     "hbs": "^4.0.6",
     "hsb": "^1.0.2",
     "jquery": "^3.4.1",
-    "request": "^2.88.0"
+    "jsonwebtoken": "^8.5.1",
+    "request": "^2.88.0",
+    "showdown": "^1.9.0"
   },
   "devDependencies": {
+    "env-cmd": "^10.0.1",
     "nodemon": "^1.19.4"
   }
 }

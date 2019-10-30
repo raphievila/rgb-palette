@@ -1,0 +1,26 @@
+%blocklist {
+    padding: 0;
+    margin: 0;
+    display: block;
+
+    li {
+        display: block;
+        padding: 2px 10px;
+        margin: 0 3px;
+    }
+}
+
+%inlinelist {
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+    li {
+        display: block;
+        flex-grow: 1;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+$terminalbg: rgb(24, 24, 24);
