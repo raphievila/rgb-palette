@@ -19,7 +19,7 @@ Before saving the file you need to select the format you prefer. For now there i
 2. JSON - saves the file ready to transport the data into JavaScript projects or similar (`application/json`) MIME type.
 3. PHP - save a PHP file (C-Style) object format (`application/x-http-php`) MIME type.
 
-![File Formats](public/assets/img/file-formats.jpg)
+![File Formats](./public/assets/img/file-formats.jpg)
 
 If a file format is not selected the app will simply ignore the command and send an alert.
 
@@ -49,7 +49,7 @@ for (i in colorSet) {
 
 ```
 
-![Color Tags](public/assets/img/color-tags.jpg)
+![Color Tags](./public/assets/img/color-tags.jpg)
 
 |Tags|Color|
 |:---|:----|

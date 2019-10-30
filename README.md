@@ -19,7 +19,7 @@ There are five color blocks which original RGB color value is:
 rgb(128,128,128);
 ```
 
-![Color Blocks](public/assets/img/color-tags.jpg)
+![Color Blocks](./public/assets/img/color-tags.jpg)
 
 When moving the sliders this values will change as soon as you let go of the mouse or sliding action.
 

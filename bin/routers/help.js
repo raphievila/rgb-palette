@@ -71,7 +71,7 @@ router.get('/help/:page', (req, res) => {
     res.render('pages', {
         title: page + '.md',
         author: 'Rafael Vila',
-        body: converter.makeHtml(html.replace(/\.\/public/g,'')),
+        body: converter.makeHtml(html.replace(/\.\/public/gm,'')),
         sidebar: helpList(),
         md: 1
     })
