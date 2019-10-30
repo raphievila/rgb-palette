@@ -107,4 +107,10 @@ code {
   position: sticky;
 }
 
+img[src$=".jpg"] {
+  width: auto;
+  max-width: 80%;
+  height: auto;
+}
+
 /*# sourceMappingURL=pages.css.map */
