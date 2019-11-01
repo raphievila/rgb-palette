@@ -30,8 +30,11 @@ hr {
     margin: 80px 20%;
     border: {
         color: teal;
+        style: solid;
         width: 5px;
+        radius: 5px;
     }
+    background-color: teal;
 }
 
 h {
