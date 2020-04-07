@@ -28,15 +28,15 @@
   "dependencies": {
     "ajax-request": "^1.2.3",
     "express": "^4.17.1",
-    "hbs": "^4.0.6",
+    "hbs": "^4.1.1",
     "hsb": "^1.0.2",
     "jquery": "^3.4.1",
     "jsonwebtoken": "^8.5.1",
-    "request": "^2.88.0",
-    "showdown": "^1.9.0"
+    "request": "^2.88.2",
+    "showdown": "^1.9.1"
   },
   "devDependencies": {
-    "env-cmd": "^10.0.1",
+    "env-cmd": "^10.1.0",
     "mem": "^5.1.1",
     "nodemon": "^1.19.4"
   }
