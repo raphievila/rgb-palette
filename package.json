@@ -1,6 +1,6 @@
 {
   "name": "rgb-palette",
-  "version": "1.0.0",
+  "version": "1.1.2",
   "description": "Basic JavaScript based web RGB color palette generator",
   "main": "bin/app.js",
   "scripts": {
@@ -8,10 +8,7 @@
     "dev": "env-cmd -f ./config/.env nodemon bin/app.js -e js,hbs,css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/raphievila/rgb-palette.git"
-  },
+  "repository": "git+https://github.com/raphievila/rgb-palette.git",
   "keywords": [
     "web",
     "dev",
@@ -40,5 +37,7 @@
     "mem": "^5.1.1",
     "nodemon": "^1.19.4"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
