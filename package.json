@@ -39,5 +39,6 @@
     "env-cmd": "^10.1.0",
     "mem": "^5.1.1",
     "nodemon": "^1.19.4"
-  }
+  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
 }
