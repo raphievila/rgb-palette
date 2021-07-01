@@ -12,7 +12,7 @@ const fetchMds = () => {
     list = fs.readdirSync(__dirname + '/../../')
 
     for (var i=0; i < list.length; i++) {
-        if (list[i].match(/.md$/)) {
+        if (/.md$/.test(list[i])) {
             mdList.push(list[i].replace('.md', ''))
         }
     }
@@ -41,7 +41,7 @@ const helpList = () => {
 
     for (var i = 0; i < items.list.length; i++) {
         filename = items.list[i]
-        friendly = filename.replace('README', 'ReadMe').replace(/(\w)([A-Z])/, `$1 $2`).trim()
+        friendly = filename.replace('README', 'ReadMe').replace('SECURITY', 'Security').replace(/(\w)([A-Z])/, `$1 $2`).trim()
         listitem = template
             .replace('[filename]', filename + '/')
             .replace('[label]', friendly)
