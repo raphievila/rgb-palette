@@ -137,3 +137,32 @@ img[src$=".jpg"] {
     max-width: 80%;
     height: auto;
 }
+
+table {
+    border: 1px solid gray;
+    line-height: 120%;
+    border: {
+        radius: 5px;
+        spacing: 0;
+    }
+    padding: 10px;
+    margin: auto;
+
+    td, th {
+        padding: 10px;
+        border-spacing: 0;
+        margin: 0;
+    }
+
+    thead {
+        tr {
+            background-color: rgba(black, 0.5);
+        }
+    }
+
+    tbody {
+        tr:nth-child(even) {
+            background-color: rgba(black, 0.2);
+        }
+    }
+}

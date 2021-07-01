@@ -3,6 +3,7 @@ const showdown = require('showdown')
 const fs = require('fs')
 const auth = require('../middleware/auth')
 const router = new express.Router()
+const sdOptions = {tables: true, tasklists: true, emoji: true}
 
 const fetchMds = () => {
     var mdList = [],
@@ -58,7 +59,7 @@ router.get('/help/test', (req, res) => {
 })
 
 router.get('/help/:page', (req, res) => {
-    var converter = new showdown.Converter(),
+    var converter = new showdown.Converter(sdOptions),
         params = (req.params !== undefined) ? req.params : false,
         page = (params && params.page !== undefined) ? params.page : 'ReadMe'
 
@@ -78,7 +79,7 @@ router.get('/help/:page', (req, res) => {
 })
 
 router.get('/help*', (req, res) => {
-    var converter = new showdown.Converter();
+    var converter = new showdown.Converter(sdOptions);
 
     res.render('pages', {
         title: 'Help Guide',

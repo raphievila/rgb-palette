@@ -116,4 +116,24 @@ img[src$=".jpg"] {
   height: auto;
 }
 
+table {
+  border: 1px solid gray;
+  line-height: 120%;
+  border-radius: 5px;
+  border-spacing: 0;
+  padding: 10px;
+  margin: auto;
+}
+table td, table th {
+  padding: 10px;
+  border-spacing: 0;
+  margin: 0;
+}
+table thead tr {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+table tbody tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 /*# sourceMappingURL=pages.css.map */
