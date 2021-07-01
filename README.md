@@ -11,7 +11,7 @@
 
 Basic JavaScript (JS) based RGB Color Palette Generator. Simple to use.
 
-First click either the Main or Secondary block, the move the sliders for the respective color. First slider represent Red, second slider represent Green and last Blue.
+First click either the Main or Secondary block, then move the sliders for the respective color. First slider represent Red, second slider represent Green and last Blue.
 
 There are five color blocks which original RGB color value is:
 
@@ -39,7 +39,7 @@ The block order is as follow:
 
 *__Third Step:__*<br>The values used by the application are populated in the fields below the color blocks. For now, copy and paste each value.
 
-Once is done, you can save the palette in three different formats (in the meantime :smile:): `json, scss` and `php` file extensions. [More Information](Saving.md)
+Once is done, you can save the palette in three different formats (in the meantime :smile:): `json`, `scss` and `php` file extensions. [More Information](Saving.md)
 
 ## Future Implementations
 
@@ -68,7 +68,7 @@ $ /location/of/repository/rgb-palette/> mkdir config
 
 ___
 
-**IMPORTANT NOTE** Then inside that directory, create a file called `.env` and `.test-env`. For the moment the app is not using this values, but `JWT_SECRET` global is required for a `middleware`.Once you create those files, you need to add the salt you want to use to authorized transactions on the app like this:
+**IMPORTANT NOTE** Inside that directory, create a file called `.env` and `.test-env`. For the moment the app is not using this values, but `JWT_SECRET` global is required for a `middleware`. Once you create those files, you need to add the salt you want to use to authorized transactions on the app like this:
 
 ```ini
 
@@ -80,7 +80,7 @@ JWT_SECRET=[the_secret_string_to_salt]
 ```
 ___
 
-When all required dependencies are installed and the `config` directory with its content is created test the installation. If installation is successful you will be able to run the following statement:
+When all required dependencies are installed and the `config` directory along with its content is, test the installation. If the installation is successful you will be able to run the following statement:
 
 ```console
 $ /location/of/repository/rgb-palette/> npm run start
