@@ -1,4 +1,4 @@
-namespace \RGB-Palette;
+namespace RGB_Palette;
 
 class BaseColor {
     const MainColor     = "rgb([main])";
