@@ -43,7 +43,7 @@ const replacer = (m, p1, p2, p3, p4, p5) => {
 
 const getRGB = (me) => {
   var rgbValue = me.css('background'),
-    rgbRule = rgbValue.replace(/(^.*?)(rgb\()(\d*, \d*, \d*)+(\))(.*?$)/i, replacer),
+    rgbRule = rgbValue.replace(/(^.*?)(rgb\()(\d+, \d+, \d+)(\))(.*?$)/i, replacer),
     rgbSplit = rgbRule.split(',');
 
   if (rgbSplit.length === 3) {
