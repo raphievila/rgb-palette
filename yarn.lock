@@ -383,12 +383,12 @@ hasown@^2.0.2:
   dependencies:
     function-bind "^1.1.2"
 
-hbs@^4.1.2:
-  version "4.1.2"
-  resolved "https://registry.npmjs.org/hbs/-/hbs-4.1.2.tgz"
+hbs@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/hbs/-/hbs-4.2.0.tgz#10e40dcc24d5be7342df9636316896617542a32b"
   dependencies:
     handlebars "4.7.7"
-    walk "2.3.14"
+    walk "2.3.15"
 
 hsb@^1.0.2:
   version "1.0.2"
@@ -894,9 +894,9 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-walk@2.3.14:
-  version "2.3.14"
-  resolved "https://registry.npmjs.org/walk/-/walk-2.3.14.tgz"
+walk@2.3.15:
+  version "2.3.15"
+  resolved "https://registry.yarnpkg.com/walk/-/walk-2.3.15.tgz#1b4611e959d656426bc521e2da5db3acecae2424"
   dependencies:
     foreachasync "^3.0.0"
 
