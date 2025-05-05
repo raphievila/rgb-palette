@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "env-cmd": "^10.1.0",
-    "mem": "^5.1.1"
+    "mem": "^9.0.2"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
