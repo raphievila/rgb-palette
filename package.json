@@ -35,7 +35,7 @@
     "utils-extend": "^1.0.0"
   },
   "devDependencies": {
-    "env-cmd": "^10.1.0",
+    "env-cmd": "^11.0.0",
     "mem": "^5.1.1"
   },
   "publishConfig": {
