@@ -595,9 +595,9 @@ neo-async@^2.6.0:
   version "2.6.2"
   resolved "https://registry.npmjs.org/neo-async/-/neo-async-2.6.2.tgz"
 
-npm-check-updates@^18.0.1:
-  version "18.0.1"
-  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-18.0.1.tgz#72b4dd6bf12749e3634ba96855bc1ed3d153fe98"
+npm-check-updates@^18.0.3:
+  version "18.0.3"
+  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-18.0.3.tgz#7485cddebd27adcf4c57acc4c9e653b38c7e67af"
 
 oauth-sign@~0.9.0:
   version "0.9.0"
