@@ -24,7 +24,7 @@
   "homepage": "https://github.com/raphievila/rgb-palette#readme",
   "dependencies": {
     "ajax-request": "^1.0.0",
-    "express": "^5.2.0",
+    "express": "^5.2.1",
     "hbs": "^4.3.1",
     "hsb": "^1.0.2",
     "jquery": "^3.7.1",
