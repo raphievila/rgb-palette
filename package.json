@@ -27,7 +27,7 @@
     "express": "^5.2.0",
     "hbs": "^4.3.1",
     "hsb": "^1.0.2",
-    "jquery": "^3.7.1",
+    "jquery": "^4.0.0",
     "jsonwebtoken": "^9.0.0",
     "npm-check-updates": "^19.1.2",
     "request": "^2.88.2",
