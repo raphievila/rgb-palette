@@ -224,9 +224,9 @@ etag@^1.8.1:
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
 
-express@^5.2.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/express/-/express-5.2.0.tgz#d4101c16807a1a061c6e9adc7ce617473b4afeb9"
+express@^5.2.1:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/express/-/express-5.2.1.tgz#8f21d15b6d327f92b4794ecf8cb08a72f956ac04"
   dependencies:
     accepts "^2.0.0"
     body-parser "^2.2.1"
@@ -458,9 +458,9 @@ isstream@~0.1.2:
   version "0.1.2"
   resolved "https://registry.npmjs.org/isstream/-/isstream-0.1.2.tgz"
 
-jquery@^3.7.1:
-  version "3.7.1"
-  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.7.1.tgz#083ef98927c9a6a74d05a6af02806566d16274de"
+jquery@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-4.0.0.tgz#95c33ac29005ff72ec444c5ba1cf457e61404fbb"
 
 jsbn@~0.1.0:
   version "0.1.1"
@@ -559,13 +559,12 @@ media-typer@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-1.1.0.tgz#6ab74b8f2d3320f2064b2a87a38e7931ff3a5561"
 
-mem@^5.1.1:
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/mem/-/mem-5.1.1.tgz#7059b67bf9ac2c924c9f1cff7155a064394adfb3"
+mem@^10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/mem/-/mem-10.0.0.tgz#08348356ec2c62148d788f07f2e781dea68524cd"
   dependencies:
     map-age-cleaner "^0.1.3"
-    mimic-fn "^2.1.0"
-    p-is-promise "^2.1.0"
+    mimic-fn "^4.0.0"
 
 merge-descriptors@^2.0.0:
   version "2.0.0"
@@ -591,9 +590,9 @@ mime-types@^3.0.0, mime-types@^3.0.1:
   dependencies:
     mime-db "^1.54.0"
 
-mimic-fn@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-2.1.0.tgz#7ed2c2ccccaf84d3ffcb7a69b57711fc2083401b"
+mimic-fn@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-4.0.0.tgz#60a90550d5cb0b239cca65d893b1a53b29871ecc"
 
 minimist@^1.2.5:
   version "1.2.6"
@@ -639,10 +638,6 @@ p-defer@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/p-defer/-/p-defer-1.0.0.tgz"
 
-p-is-promise@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/p-is-promise/-/p-is-promise-2.1.0.tgz#918cebaea248a62cf7ffab8e3bca8c5f882fc42e"
-
 parseurl@^1.3.3:
   version "1.3.3"
   resolved "https://registry.yarnpkg.com/parseurl/-/parseurl-1.3.3.tgz#9da19e7bee8d12dff0513ed5b76957793bc2e8d4"
@@ -674,13 +669,7 @@ punycode@^2.1.0, punycode@^2.1.1:
   version "2.1.1"
   resolved "https://registry.npmjs.org/punycode/-/punycode-2.1.1.tgz"
 
-qs@^6.14.0:
-  version "6.14.0"
-  resolved "https://registry.yarnpkg.com/qs/-/qs-6.14.0.tgz#c63fa40680d2c5c941412a0e899c89af60c0a930"
-  dependencies:
-    side-channel "^1.1.0"
-
-qs@^6.15.2:
+qs@^6.14.0, qs@^6.15.2:
   version "6.16.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.16.0.tgz#c22c723a28a920f3aacdce8289fabd43eccb79fd"
   dependencies:
@@ -796,13 +785,6 @@ showdown@^2.1.0:
   dependencies:
     commander "^9.0.0"
 
-side-channel-list@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/side-channel-list/-/side-channel-list-1.0.0.tgz#10cb5984263115d3b7a0e336591e290a830af8ad"
-  dependencies:
-    es-errors "^1.3.0"
-    object-inspect "^1.13.3"
-
 side-channel-list@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/side-channel-list/-/side-channel-list-1.0.1.tgz#c2e0b5a14a540aebee3bbc6c3f8666cc9b509127"
@@ -828,16 +810,6 @@ side-channel-weakmap@^1.0.2:
     get-intrinsic "^1.2.5"
     object-inspect "^1.13.3"
     side-channel-map "^1.0.1"
-
-side-channel@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/side-channel/-/side-channel-1.1.0.tgz#c3fcff9c4da932784873335ec9765fa94ff66bc9"
-  dependencies:
-    es-errors "^1.3.0"
-    object-inspect "^1.13.3"
-    side-channel-list "^1.0.0"
-    side-channel-map "^1.0.1"
-    side-channel-weakmap "^1.0.2"
 
 side-channel@^1.1.1:
   version "1.1.1"
@@ -892,15 +864,7 @@ tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   version "0.14.5"
   resolved "https://registry.npmjs.org/tweetnacl/-/tweetnacl-0.14.5.tgz"
 
-type-is@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/type-is/-/type-is-2.0.1.tgz#64f6cf03f92fce4015c2b224793f6bdd4b068c97"
-  dependencies:
-    content-type "^1.0.5"
-    media-typer "^1.1.0"
-    mime-types "^3.0.0"
-
-type-is@^2.1.0:
+type-is@^2.0.1, type-is@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/type-is/-/type-is-2.1.0.tgz#71d1a7053293582e16ac9f3ebaf1ab9aa49e5570"
   dependencies:

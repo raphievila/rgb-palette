@@ -24,7 +24,7 @@
   "homepage": "https://github.com/raphievila/rgb-palette#readme",
   "dependencies": {
     "ajax-request": "^1.0.0",
-    "express": "^5.2.0",
+    "express": "^5.2.1",
     "hbs": "^4.3.1",
     "hsb": "^1.0.2",
     "jquery": "^3.7.1",
@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "env-cmd": "^11.0.0",
-    "mem": "^5.1.1"
+    "mem": "^10.0.0"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
