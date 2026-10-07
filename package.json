@@ -30,6 +30,9 @@
     "jquery": "^4.0.0",
     "jsonwebtoken": "^9.0.0",
     "npm-check-updates": "^23.1.0",
+    "jquery": "^3.7.1",
+    "jsonwebtoken": "^9.0.3",
+    "npm-check-updates": "^19.1.2",
     "request": "^2.88.2",
     "showdown": "^2.1.0",
     "utils-extend": "^1.0.0"
