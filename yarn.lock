@@ -458,9 +458,9 @@ isstream@~0.1.2:
   version "0.1.2"
   resolved "https://registry.npmjs.org/isstream/-/isstream-0.1.2.tgz"
 
-jquery@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/jquery/-/jquery-4.0.0.tgz#95c33ac29005ff72ec444c5ba1cf457e61404fbb"
+jquery@^3.7.1:
+  version "3.7.1"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.7.1.tgz#083ef98927c9a6a74d05a6af02806566d16274de"
 
 jsbn@~0.1.0:
   version "0.1.1"
@@ -610,9 +610,9 @@ neo-async@^2.6.2:
   version "2.6.2"
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
 
-npm-check-updates@^23.1.0:
-  version "23.1.0"
-  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-23.1.0.tgz#fc4fc74cd1d3663185a0cc6c75cdd2992c7344bd"
+npm-check-updates@^23.1.1:
+  version "23.1.1"
+  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-23.1.1.tgz#658512e19009bf386567878b7e6072ed3e01f48f"
 
 oauth-sign@~0.9.0:
   version "0.9.0"
