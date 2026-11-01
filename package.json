@@ -25,7 +25,7 @@
   "dependencies": {
     "ajax-request": "^1.0.0",
     "express": "^5.2.1",
-    "hbs": "^4.3.1",
+    "hbs": "^4.4.0",
     "hsb": "^1.0.2",
     "jquery": "^4.0.0",
     "jsonwebtoken": "^9.0.0",
